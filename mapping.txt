@@ -1,0 +1,18 @@
+id --> id , code , model , product_ID , product_id , UniqueID
+name --> name , title , description , ProductCaption_Title
+link --> url , link , product_Link , productUrl
+category --> category , categories , Category_Caption_Title
+availability --> 
+quantity --> stock , quantity , inventory , balance , quantinty_mode_value , instock , Stock , Availability
+manufacturer --> manufacturer , brand , kataskeyastis , Supplier , Manufacturer
+weight --> weight , Weight_PC
+attributes --> Material , age_appropriate , specs , yliko , Stuff_Item_Description , product_filter
+images -->  main_image , image_link , image , images , PhotoPath , imageurl
+mpn --> mpn , model , Product_Code , MON
+sku --> sku , code , product_ID , Sku , SKU , Product_Partnumber
+ean --> ean , barcode , PerItemBarCode , EAN , Barcode_Item
+demensions --> Dimensions , dimensions
+special_price -->  special_price , suggested_price_with_vat , eshop_price , price , weboffer_price_with_vat , weboffer_price_with_vat , SalePrice
+regular_price --> regular_price , retail_price , recommended_retail_price_with_vat , suggested_price , RegularPrice , price , RetailPrice
+reseller_price --> reseller_price , wholesale_price , recommended_retail_price_no_vat , wholesale_price_without_vat , prev_Price , net_price , SuggestedRetailPrice , purchase_price , WholesalePrice
+description --> description , marketing_detailed_description , marketing_description , Content , ProductCaption_LargeDescription
