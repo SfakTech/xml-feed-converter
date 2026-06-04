@@ -2,8 +2,17 @@
 
 require "mapping.php";
 
-$inputDir = 'C:\\Users\\Dtek\\Desktop\\websites\\php_xml\\xml';
-$outputDir = 'C:\\Users\\Dtek\\Desktop\\websites\\php_xml\\output';
+$options = getopt('', ['input:', 'output:']);
+$inputDir  = rtrim($options['input']  ?? './xml', '/\\');
+$outputDir = rtrim($options['output'] ?? './output', '/\\');
+
+if (!is_dir($inputDir)) {
+    die("Error: input folder not found: $inputDir\n");
+}
+
+if (!is_dir($outputDir) && !mkdir($outputDir, 0755, true)) {
+    die("Error: could not create output folder: $outputDir\n");
+}
 
 $validElements = ['product', 'Product', 'item', 'post', 'entry', 'Table'];
 

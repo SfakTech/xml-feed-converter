@@ -3,7 +3,7 @@
     <product id="">
         <name></name> <!-- [CDATA[ ]] -->
         <link></link> <!-- [CDATA[ ]]-->
-        <categoty></categoty> <!-- [CDATA[ ]] --> 
+        <category></category> <!-- [CDATA[ ]] --> 
         <availability></availability>
         <quantity></quantity>
         <manufacturer></manufacturer> <!-- [CDATA[ ]]-->

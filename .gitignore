@@ -1,0 +1,4 @@
+xml/
+output/
+*.log
+.DS_Store
