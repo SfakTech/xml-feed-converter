@@ -1,4 +1,5 @@
 xml/
 output/
+samples/
 *.log
 .DS_Store

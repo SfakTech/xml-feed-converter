@@ -176,3 +176,17 @@ function analyzeXml(string $filePath, array $mapping): array
         'unmatched' => $unmatched,
     ];
 }
+
+function saveMappingFile(array $mapping): bool
+{
+    $lines = ["<?php\n\n\$mapping = [\n"];
+
+    foreach ($mapping as $key => $values) {
+        $quoted  = array_map(fn($v) => "'" . addslashes($v) . "'", $values);
+        $lines[] = "    '$key' =>\n    [" . implode(', ', $quoted) . "],\n\n";
+    }
+
+    $lines[] = "];\n";
+
+    return file_put_contents(__DIR__ . '/mapping.php', implode('', $lines)) !== false;
+}

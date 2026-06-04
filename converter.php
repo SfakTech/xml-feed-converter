@@ -1,7 +1,7 @@
 <?php
 
-require 'mapping.php';
-require 'functions.php';
+require 'src/mapping.php';
+require 'src/functions.php';
 
 $options  = getopt('', ['input:', 'output:']);
 $inputDir  = rtrim($options['input']  ?? './xml', '/\\');
